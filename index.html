@@ -1,493 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO -->
-  <title>Zeya Sir Physics Classes | Apollo Classes – JEE, NEET &amp; Boards Coaching</title>
-  <meta name="description" content="Learn Physics with Zeya Sir at Apollo Classes. 1:1 mentorship, 100-Day Crash Course for Boards, JEE &amp; NEET. Limited seats – Book your free demo today!" />
-  <meta name="keywords"    content="Zeya Sir, Apollo Classes, Physics coaching, JEE coaching, NEET coaching, 1:1 mentorship, physics tutor, 100 day crash course, CBSE physics, ICSE physics, NIOS physics" />
-  <meta name="robots"      content="index, follow" />
+  <title>Zeya Sir Physics Classes | Apollo Classes</title>
+  <meta name="description" content="Best 1:1 coaching for boards, JEE, NEET. Learn Physics from Zeya Sir with a 100-Day Crash Course and personalized mentorship." />
 
-  <!-- Open Graph -->
-  <meta property="og:type"        content="website" />
-  <meta property="og:title"       content="Zeya Sir Physics Classes | Apollo Classes" />
-  <meta property="og:description" content="100-Day Crash Course + 1:1 Mentorship for Boards, JEE &amp; NEET. Book your free demo now!" />
-
-  <!-- Fonts (only external dependency — safe for static hosting) -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles.css" />
-
-  <!-- Schema.org structured data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "EducationalOrganization",
-    "name": "Apollo Classes",
-    "description": "1:1 Physics coaching for Boards, JEE and NEET by Zeya Sir",
-    "telephone": "+918290391367",
-    "url": "https://apolloclasses.in"
-  }
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            apollo: {
+              950: '#030712',
+              900: '#071226',
+              800: '#0B1D3E',
+              700: '#123168',
+              400: '#3F7BFF',
+              yellow: '#FACC15'
+            }
+          },
+          boxShadow: {
+            glow: '0 0 0 1px rgba(250,204,21,.35),0 18px 48px rgba(10,18,40,.6)',
+            yellow: '0 12px 42px rgba(250,204,21,.28)'
+          }
+        }
+      }
+    }
   </script>
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="bg-apollo-950 text-slate-100 antialiased selection:bg-yellow-300 selection:text-slate-900">
 
-<!-- ════════════════════════════════════════
-     NAVBAR
-════════════════════════════════════════ -->
-<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
-  <div class="inner">
-    <div class="logo">
-      <div class="logo-icon" aria-hidden="true">A</div>
-      <span class="logo-text">Apollo <span>Classes</span></span>
-    </div>
-    <a href="tel:8290391367" class="btn-gold" aria-label="Call to book a demo">📞 Book Demo</a>
-  </div>
-</nav>
-
-
-<!-- ════════════════════════════════════════
-     HERO
-════════════════════════════════════════ -->
-<section class="hero" itemscope itemtype="https://schema.org/EducationalOrganization" aria-label="Hero">
-  <div class="container inner">
-
-    <div class="badge">
-      <span class="dot-pulse" aria-hidden="true"></span>
-      Limited Seats Available — Enroll Now
-    </div>
-
-    <!-- Zeya Sir avatar -->
-    <div class="zeya-avatar-wrap" aria-hidden="true">
-      <div class="zeya-avatar">
-        <div class="zeya-glow"></div>
-        <div class="zeya-avatar-inner">
-          <svg viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <circle cx="65" cy="65" r="62" fill="#162d5a"/>
-            <ellipse cx="65" cy="108" rx="38" ry="28" fill="#1e3a6e"/>
-            <polygon points="55,86 65,100 75,86 70,80 60,80" fill="#f5c518" opacity="0.9"/>
-            <ellipse cx="65" cy="54" rx="26" ry="30" fill="#e8c49a"/>
-            <ellipse cx="65" cy="30" rx="26" ry="14" fill="#2a1a0e"/>
-            <rect x="39" y="28" width="52" height="12" rx="6" fill="#2a1a0e"/>
-            <ellipse cx="55" cy="52" rx="4" ry="5" fill="white"/>
-            <ellipse cx="75" cy="52" rx="4" ry="5" fill="white"/>
-            <circle cx="56" cy="53" r="2.5" fill="#1a0a00"/>
-            <circle cx="76" cy="53" r="2.5" fill="#1a0a00"/>
-            <path d="M56 67 Q65 74 74 67" stroke="#a0603a" stroke-width="2" fill="none" stroke-linecap="round"/>
-            <rect x="47" y="48" width="14" height="10" rx="3" stroke="#f5c518" stroke-width="1.5" fill="none"/>
-            <rect x="69" y="48" width="14" height="10" rx="3" stroke="#f5c518" stroke-width="1.5" fill="none"/>
-            <line x1="61" y1="53" x2="69" y2="53" stroke="#f5c518" stroke-width="1.5"/>
-            <line x1="47" y1="53" x2="44" y2="53" stroke="#f5c518" stroke-width="1.5"/>
-            <line x1="83" y1="53" x2="86" y2="53" stroke="#f5c518" stroke-width="1.5"/>
-          </svg>
-        </div>
+  <!-- ===== Sticky Header ===== -->
+  <header id="site-header" class="fixed top-0 z-50 w-full border-b border-white/10 bg-apollo-900/70 backdrop-blur-xl">
+    <nav class="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8" aria-label="Main navigation">
+      <a href="#home" class="group flex items-center gap-3">
+        <span class="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-yellow-300 to-yellow-500 font-extrabold text-apollo-900 shadow-yellow">A</span>
+        <span class="font-['Poppins'] text-lg font-semibold tracking-wide">Apollo <span class="text-yellow-300">Classes</span></span>
+      </a>
+      <div class="hidden items-center gap-7 text-sm text-slate-200 md:flex">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#courses">Courses</a>
+        <a class="nav-link" href="#one-on-one">1:1 Program</a>
+        <a class="nav-link" href="#testimonials">Reviews</a>
       </div>
-    </div>
+      <a href="tel:+918290391367" class="rounded-xl bg-yellow-300 px-4 py-2 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:bg-yellow-200">Call Now</a>
+    </nav>
+  </header>
 
-    <div class="hero-role-badge">⭐ Senior Physics Mentor</div>
+  <main>
+    <!-- ===== Hero Section ===== -->
+    <section id="home" class="relative overflow-hidden pt-28 sm:pt-32">
+      <div class="hero-gradient absolute inset-0 -z-10"></div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <canvas id="particles" class="pointer-events-none absolute inset-0 -z-10 opacity-35"></canvas>
 
-    <h1 itemprop="name">
-      Learn Physics from<br><span>Zeya Sir</span>
-    </h1>
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 pb-20 sm:px-6 lg:grid-cols-2 lg:px-8 lg:pb-24">
+        <div class="space-y-7">
+          <span class="inline-flex items-center gap-2 rounded-full border border-yellow-300/30 bg-yellow-300/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.15em] text-yellow-200">⚡ Limited Seats • 2026 Batch</span>
+          <h1 class="font-['Poppins'] text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">Learn Physics from <span class="text-yellow-300">Zeya Sir</span></h1>
+          <p class="max-w-xl text-base text-slate-300 sm:text-lg">100-Day Crash Course + 1:1 Mentorship for Boards, JEE, and NEET aspirants who want top scores with personal guidance.</p>
 
-    <p class="hero-sub" itemprop="description">
-      100-Day Crash Course + 1:1 Mentorship<br>
-      <strong>Boards &bull; JEE &bull; NEET</strong>
-    </p>
+          <div class="flex flex-wrap gap-3 text-xs sm:text-sm">
+            <span class="pill">IIT-Level</span>
+            <span class="pill">1:1 Learning</span>
+            <span class="pill">Doubt Solving</span>
+          </div>
 
-    <div class="hero-ctas">
-      <a href="tel:8290391367" class="btn-gold">🎯 Book Free Demo</a>
-      <a href="tel:8290391367" class="btn-outline">📞 Call Now</a>
-    </div>
+          <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
+            <a href="tel:+918290391367" class="cta-primary">Book Free Demo</a>
+            <a href="tel:+918290391367" class="cta-secondary">Call Now</a>
+          </div>
 
-    <div class="stats-row">
-      <div class="stat-box">
-        <div class="stat-num" data-count="100" data-suffix="+">0+</div>
-        <div class="stat-label">Days Course</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-num">1:1</div>
-        <div class="stat-label">Mentorship</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-num" data-count="4.9" data-prefix="★">★0</div>
-        <div class="stat-label">Rated</div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ════════════════════════════════════════
-     ABOUT ZEYA SIR
-════════════════════════════════════════ -->
-<section class="about-section" id="about" aria-labelledby="about-title">
-  <div class="container fade-up">
-
-    <div class="badge"><span class="dot-pulse" aria-hidden="true"></span>About</div>
-    <h2 class="section-title" id="about-title">Meet <span>Zeya Sir</span></h2>
-    <div class="divider" aria-hidden="true"></div>
-
-    <div class="about-grid">
-      <div class="about-text">
-        <p>
-          Zeya Sir is one of the most trusted Physics mentors for students preparing for
-          Boards, JEE, and NEET. With a focused, results-driven teaching style, he breaks
-          down even the toughest concepts into simple, easy-to-understand lessons.
-        </p>
-
-        <div class="check-item">
-          <div class="ci-dot" aria-hidden="true">✦</div>
-          <div class="ci-body">
-            <strong>Simplifies Complex Physics</strong>
-            <span>Explains every concept step-by-step with real-world examples</span>
+          <div class="grid max-w-lg grid-cols-3 gap-3">
+            <div class="stat-card"><p class="stat-number" data-count="100" data-suffix="+">0+</p><p class="stat-label">Days Plan</p></div>
+            <div class="stat-card"><p class="stat-number" data-count="1" data-prefix="1:" data-suffix="">1:1</p><p class="stat-label">Mentorship</p></div>
+            <div class="stat-card"><p class="stat-number" data-count="4.9" data-prefix="★">★0</p><p class="stat-label">Rating</p></div>
           </div>
         </div>
 
-        <div class="check-item">
-          <div class="ci-dot" aria-hidden="true">✦</div>
-          <div class="ci-body">
-            <strong>Focused on Results</strong>
-            <span>Proven record of students scoring 90%+ in Boards &amp; clearing JEE/NEET</span>
-          </div>
-        </div>
-
-        <div class="check-item">
-          <div class="ci-dot" aria-hidden="true">✦</div>
-          <div class="ci-body">
-            <strong>Trusted Mentor</strong>
-            <span>Personalized attention, flexible pace, student-first approach</span>
+        <div class="relative mx-auto w-full max-w-lg">
+          <div class="absolute inset-4 -z-10 rounded-[2.25rem] bg-gradient-to-r from-yellow-300/45 via-sky-400/20 to-yellow-200/25 blur-3xl"></div>
+          <div class="glass-card rounded-[2rem] p-3 shadow-glow sm:p-4">
+            <img src="zeya-sir.jpg" alt="Zeya Sir - Senior Physics Mentor" class="hero-image h-[420px] w-full rounded-2xl object-cover shadow-2xl" />
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="about-highlights">
-        <div class="highlight-strip">
-          <h4>Physics &amp; Chemistry</h4>
-          <p>CBSE / ICSE / NIOS / JEE / NEET</p>
-        </div>
-        <div class="highlight-strip">
-          <h4>100-Day Crash Program</h4>
-          <p>Full syllabus + test series + guess papers</p>
-        </div>
-        <div class="highlight-strip">
-          <h4>1:1 Personal Mentorship</h4>
-          <p>One student, one teacher. Always.</p>
+    <!-- ===== About Section ===== -->
+    <section id="about" class="section-wrap">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 class="section-title reveal">About Zeya Sir</h2>
+        <p class="section-sub reveal">Awarded by students as one of the most impactful Physics mentors for concept clarity and score improvement.</p>
+        <div class="mt-8 grid gap-6 md:grid-cols-3">
+          <article class="info-card reveal"><h3>🎯 Results-Driven Teaching</h3><p>Step-by-step explanation style that boosts confidence and exam performance.</p></article>
+          <article class="info-card reveal"><h3>🧠 Concept Mastery</h3><p>Physics made easy with real-life examples, visuals, and memory techniques.</p></article>
+          <article class="info-card reveal"><h3>🤝 Personal Mentorship</h3><p>Every learner gets custom guidance, pace control, and strategic study planning.</p></article>
         </div>
       </div>
-    </div>
+    </section>
 
-  </div>
-</section>
-
-
-<!-- ════════════════════════════════════════
-     COURSE
-════════════════════════════════════════ -->
-<section class="course-section" id="course" aria-labelledby="course-title">
-  <div class="container fade-up">
-
-    <div class="badge"><span class="dot-pulse" aria-hidden="true"></span>Course Details</div>
-    <h2 class="section-title" id="course-title">100-Day <span>Crash Course</span></h2>
-    <div class="divider" aria-hidden="true"></div>
-    <p class="section-sub">Complete exam preparation — from basics to advanced — in 100 structured days.</p>
-
-    <div class="grid-2" style="margin-bottom:20px;">
-      <div class="card">
-        <div class="icon-box" aria-hidden="true">⚛️</div>
-        <h3>Physics</h3>
-        <p>Mechanics, Optics, Electricity, Modern Physics — complete syllabus with in-depth explanations.</p>
-      </div>
-      <div class="card">
-        <div class="icon-box" aria-hidden="true">🧪</div>
-        <h3>Chemistry</h3>
-        <p>Organic, Inorganic &amp; Physical Chemistry — theory, numericals, and NCERT mastery.</p>
-      </div>
-      <div class="card">
-        <div class="icon-box" aria-hidden="true">📋</div>
-        <h3>Boards Coverage</h3>
-        <p>CBSE, ICSE, NIOS — class 11 &amp; 12 full syllabus with exam-pattern questions.</p>
-      </div>
-      <div class="card">
-        <div class="icon-box" aria-hidden="true">🏆</div>
-        <h3>JEE &amp; NEET Prep</h3>
-        <p>Conceptual depth + problem-solving strategies specifically designed for JEE Mains, Advanced &amp; NEET.</p>
-      </div>
-    </div>
-
-    <div class="card card-banner">
-      <p class="big">Every batch includes 1:1 Mentoring sessions with Zeya Sir</p>
-      <p class="small">Personalized guidance throughout your 100-day journey</p>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ════════════════════════════════════════
-     HIGHLIGHTS
-════════════════════════════════════════ -->
-<section class="highlights-section" id="highlights" aria-labelledby="highlights-title">
-  <div class="container fade-up">
-
-    <div class="badge"><span class="dot-pulse" aria-hidden="true"></span>What's Included</div>
-    <h2 class="section-title" id="highlights-title">Course <span>Highlights</span></h2>
-    <div class="divider" aria-hidden="true"></div>
-
-    <div class="grid-3">
-      <div class="card card-center">
-        <span class="emoji" aria-hidden="true">📚</span>
-        <h4>Full Syllabus</h4>
-        <p>100% curriculum coverage — no topic left behind</p>
-      </div>
-      <div class="card card-center">
-        <span class="emoji" aria-hidden="true">📝</span>
-        <h4>Test Series</h4>
-        <p>Regular mock tests to track your progress</p>
-      </div>
-      <div class="card card-center">
-        <span class="emoji" aria-hidden="true">🎯</span>
-        <h4>Guess Papers</h4>
-        <p>High-accuracy exam guess papers every year</p>
-      </div>
-      <div class="card card-center">
-        <span class="emoji" aria-hidden="true">🏫</span>
-        <h4>CBSE / ICSE / NIOS</h4>
-        <p>All board formats covered equally</p>
-      </div>
-      <div class="card card-center">
-        <span class="emoji" aria-hidden="true">💬</span>
-        <h4>Doubt Solving</h4>
-        <p>Ask anytime — no doubt goes unanswered</p>
-      </div>
-      <div class="card card-center">
-        <span class="emoji" aria-hidden="true">🔴</span>
-        <h4>Live Classes</h4>
-        <p>Interactive online sessions with recordings</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ════════════════════════════════════════
-     1:1 MENTORSHIP PROGRAM
-════════════════════════════════════════ -->
-<section class="one-on-one-section" id="one-on-one" aria-labelledby="oto-title">
-  <div class="container fade-up">
-
-    <div class="badge"><span class="dot-pulse" aria-hidden="true"></span>Premium Program</div>
-    <h2 class="section-title" id="oto-title">1:1 <span>Mentorship Program</span></h2>
-    <div class="divider" aria-hidden="true"></div>
-    <p class="section-sub">The most focused way to learn — one student, one teacher, zero distractions.</p>
-
-    <div class="grid-2" style="margin-bottom:28px;">
-      <div class="card feature-card">
-        <div class="fc-icon" aria-hidden="true">👤</div>
-        <div>
-          <h4>1 Student : 1 Teacher</h4>
-          <p>Complete attention on your weaknesses and goals</p>
+    <!-- ===== Course Section ===== -->
+    <section id="courses" class="section-wrap bg-apollo-900/60">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 class="section-title reveal">Course Programs</h2>
+        <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="course-card reveal"><span>⚛️</span><h3>Physics</h3><p>Boards + JEE/NEET complete concept and problem-solving sessions.</p></article>
+          <article class="course-card reveal"><span>🧪</span><h3>Chemistry</h3><p>Organic, inorganic, and physical chemistry with smart revision.</p></article>
+          <article class="course-card reveal"><span>📘</span><h3>Boards Focus</h3><p>CBSE, ICSE, NIOS aligned question bank and answer-writing drills.</p></article>
+          <article class="course-card reveal"><span>🏆</span><h3>Crash 100</h3><p>100-day sprint with tests, analysis, and high-yield modules.</p></article>
         </div>
       </div>
-      <div class="card feature-card">
-        <div class="fc-icon" aria-hidden="true">🕐</div>
-        <div>
-          <h4>Flexible Timing</h4>
-          <p>Schedule classes at a time that suits you best</p>
+    </section>
+
+    <!-- ===== Highlights Section ===== -->
+    <section class="section-wrap">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 class="section-title reveal">Highlights That Drive Results</h2>
+        <div class="mt-8 grid gap-4 md:grid-cols-2">
+          <div class="check-item reveal">✅ Daily doubt-solving support</div>
+          <div class="check-item reveal">✅ Weekly adaptive test series</div>
+          <div class="check-item reveal">✅ Progress analytics & parent reports</div>
+          <div class="check-item reveal">✅ Recorded sessions for replay</div>
+          <div class="check-item reveal">✅ Personalized strategy for weak topics</div>
+          <div class="check-item reveal">✅ Exam-time revision boosters</div>
         </div>
       </div>
-      <div class="card feature-card">
-        <div class="fc-icon" aria-hidden="true">🎥</div>
-        <div>
-          <h4>Session Recordings</h4>
-          <p>Revisit every lecture whenever you want</p>
-        </div>
-      </div>
-      <div class="card feature-card">
-        <div class="fc-icon" aria-hidden="true">💳</div>
-        <div>
-          <h4>Pay Per Class</h4>
-          <p>No upfront commitment — pay only for what you attend</p>
-        </div>
-      </div>
-    </div>
+    </section>
 
-    <div class="one-on-one-cta">
-      <a href="tel:8290391367" class="btn-gold">Get 1:1 Mentorship →</a>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ════════════════════════════════════════
-     FACULTY
-════════════════════════════════════════ -->
-<section class="faculty-section" id="faculty" aria-labelledby="faculty-title">
-  <div class="container fade-up">
-
-    <div class="badge"><span class="dot-pulse" aria-hidden="true"></span>Our Educators</div>
-    <h2 class="section-title" id="faculty-title">Meet Our <span>Faculty</span></h2>
-    <div class="divider" aria-hidden="true"></div>
-
-    <div class="faculty-grid">
-
-      <!-- Zeya Sir — featured -->
-      <div class="faculty-card featured">
-        <div class="lead-label">⭐ Lead Mentor</div>
-        <div class="faculty-avatar">Z</div>
-        <h3>Zeya Sir</h3>
-        <p class="faculty-role">Senior Physics Mentor</p>
-        <p class="faculty-bio">Expert in making Physics simple, intuitive, and exam-ready for every student.</p>
-        <div class="faculty-tags">
-          <span class="tag">Physics</span>
-          <span class="tag">JEE</span>
-          <span class="tag">NEET</span>
-          <span class="tag">Boards</span>
-        </div>
-      </div>
-
-      <div class="faculty-card">
-        <div class="faculty-avatar">A</div>
-        <h3>Abhishek Dwivedi</h3>
-        <p class="faculty-role">Mathematics &amp; Science</p>
-        <p class="faculty-bio">Dedicated educator with strong command on problem-solving and exam strategies.</p>
-      </div>
-
-      <div class="faculty-card">
-        <div class="faculty-avatar">S</div>
-        <h3>Sahil Sir</h3>
-        <p class="faculty-role">Chemistry &amp; Biology</p>
-        <p class="faculty-bio">Known for clear and structured explanations that make complex topics click fast.</p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ════════════════════════════════════════
-     TESTIMONIALS
-════════════════════════════════════════ -->
-<section class="testimonials-section" id="testimonials" aria-labelledby="testimonials-title">
-  <div class="container fade-up">
-
-    <div class="badge"><span class="dot-pulse" aria-hidden="true"></span>Student Reviews</div>
-    <h2 class="section-title" id="testimonials-title">What Students <span>Say</span></h2>
-    <div class="divider" aria-hidden="true"></div>
-
-    <div class="testimonials-grid">
-
-      <article class="testimonial">
-        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-        <p class="testimonial-text">
-          "Zeya Sir explained Electrostatics in a way no book ever could. I went from 45 marks
-          to 88 in Physics in just one term. The 1:1 sessions were a game-changer for me."
-        </p>
-        <div class="testimonial-author">
-          <div class="author-avatar" aria-hidden="true">R</div>
-          <div>
-            <div class="author-name">Ritika Sharma</div>
-            <div class="author-tag">Class 12 CBSE &bull; 88% in Physics</div>
+    <!-- ===== 1:1 Program Section ===== -->
+    <section id="one-on-one" class="section-wrap bg-gradient-to-br from-apollo-800/70 via-apollo-900 to-apollo-950">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="premium-card reveal">
+          <p class="mb-4 inline-block rounded-full border border-yellow-300/40 bg-yellow-300/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-yellow-200">Premium 1:1 Program</p>
+          <h2 class="section-title !text-3xl sm:!text-4xl">One Student. One Mentor. One Powerful Result.</h2>
+          <p class="mt-3 max-w-2xl text-slate-300">This is the most focused path for ambitious students: private sessions, custom scheduling, and laser-focused improvements every week.</p>
+          <div class="mt-7 grid gap-4 sm:grid-cols-2">
+            <div class="mini-premium">🕒 Flexible timing with school routine</div>
+            <div class="mini-premium">🎥 All sessions recorded for revision</div>
+            <div class="mini-premium">📈 Weekly performance feedback</div>
+            <div class="mini-premium">💳 Pay per class option available</div>
           </div>
+          <a href="tel:+918290391367" class="cta-primary mt-8 inline-flex">Get 1:1 Mentorship</a>
         </div>
-      </article>
+      </div>
+    </section>
 
-      <article class="testimonial">
-        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-        <p class="testimonial-text">
-          "The 100-day crash course covered everything from scratch. Zeya Sir's doubt-solving
-          sessions are incredibly detailed — he never rushes you. I cleared JEE Mains on my
-          first attempt!"
-        </p>
-        <div class="testimonial-author">
-          <div class="author-avatar" aria-hidden="true">A</div>
-          <div>
-            <div class="author-name">Aryan Verma</div>
-            <div class="author-tag">JEE Mains Qualified &bull; Apollo Classes Batch 2024</div>
+    <!-- ===== Faculty Section ===== -->
+    <section class="section-wrap" id="faculty">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 class="section-title reveal">Faculty Team</h2>
+        <div class="mt-8 grid gap-5 lg:grid-cols-3">
+          <article class="faculty-main reveal lg:col-span-2">
+            <h3>Zeya Sir</h3>
+            <p>Lead Physics Mentor</p>
+            <p class="mt-3 text-slate-300">Specializes in transforming struggling students into top performers through concept-first mentoring and high-impact practice systems.</p>
+          </article>
+          <article class="faculty-card reveal"><h3>Abhishek Dwivedi</h3><p>Math & Science</p></article>
+          <article class="faculty-card reveal"><h3>Sahil Sir</h3><p>Chemistry & Biology</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Testimonials Carousel ===== -->
+    <section id="testimonials" class="section-wrap bg-apollo-900/60">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <h2 class="section-title reveal">What Students Say</h2>
+        <div class="testimonial-shell reveal">
+          <div class="testimonial-track" id="testimonial-track">
+            <article class="testimonial-slide"><p>“Zeya Sir made Physics feel easy. I jumped from 52 to 90 marks in one term.”</p><h4>Ritika • Class 12</h4></article>
+            <article class="testimonial-slide"><p>“The 100-day structure and personal follow-up gave me confidence to crack JEE Main.”</p><h4>Aryan • JEE Aspirant</h4></article>
+            <article class="testimonial-slide"><p>“1:1 mentoring changed everything. My doubts never stayed unresolved.”</p><h4>Priya • NEET Aspirant</h4></article>
           </div>
+          <div class="mt-5 flex justify-center gap-2" id="dots"></div>
         </div>
-      </article>
+      </div>
+    </section>
 
-      <article class="testimonial">
-        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-        <p class="testimonial-text">
-          "Flexible timing and recorded sessions made it so easy to study alongside school.
-          The guess papers were spot-on — 3 out of 5 questions came directly from the material
-          Zeya Sir gave us."
-        </p>
-        <div class="testimonial-author">
-          <div class="author-avatar" aria-hidden="true">P</div>
-          <div>
-            <div class="author-name">Priya Mehta</div>
-            <div class="author-tag">NEET Aspirant &bull; ICSE Board</div>
-          </div>
+    <!-- ===== Final CTA ===== -->
+    <section id="contact" class="relative overflow-hidden py-20">
+      <div class="absolute inset-0 -z-10 bg-gradient-to-r from-yellow-300/15 via-apollo-800 to-yellow-300/15"></div>
+      <div class="mx-auto max-w-5xl rounded-3xl border border-yellow-200/25 bg-slate-950/50 px-6 py-14 text-center shadow-glow backdrop-blur lg:px-12">
+        <h2 class="font-['Poppins'] text-3xl font-extrabold sm:text-5xl">Book Your Free Demo Today</h2>
+        <p class="mx-auto mt-4 max-w-2xl text-slate-300">Only limited demo slots are open this week. Talk to Apollo Classes now and secure your seat in Zeya Sir's premium batches.</p>
+        <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+          <a href="tel:+918290391367" class="cta-primary">Book Free Demo</a>
+          <a href="tel:+918290391367" class="cta-secondary">Call: 8290391367</a>
         </div>
-      </article>
+      </div>
+    </section>
+  </main>
 
-    </div>
-
+  <!-- ===== Sticky CTA Bar ===== -->
+  <div id="sticky-cta" class="fixed bottom-4 left-1/2 z-50 flex w-[min(94vw,520px)] -translate-x-1/2 items-center justify-center gap-2 rounded-2xl border border-yellow-200/30 bg-apollo-900/90 p-2 shadow-glow backdrop-blur-xl">
+    <a href="tel:+918290391367" class="cta-primary w-full justify-center !px-3 !py-2 text-sm">Book Free Demo</a>
+    <a href="tel:+918290391367" class="cta-secondary w-full justify-center !px-3 !py-2 text-sm">Call Now</a>
   </div>
-</section>
 
+  <!-- ===== WhatsApp Floating Button ===== -->
+  <a href="https://wa.me/918290391367" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" class="fixed bottom-24 right-4 z-50 grid h-14 w-14 place-items-center rounded-full bg-[#25D366] text-2xl text-white shadow-2xl transition hover:-translate-y-1 hover:scale-105">💬</a>
 
-<!-- ════════════════════════════════════════
-     FINAL CTA
-════════════════════════════════════════ -->
-<section class="final-cta" id="contact" aria-labelledby="cta-title">
-  <div class="glow-bg" aria-hidden="true"></div>
-  <div class="container inner">
+  <!-- ===== Footer ===== -->
+  <footer class="border-t border-white/10 bg-apollo-900/60 pb-28 pt-8 text-center text-sm text-slate-400">
+    <p class="font-semibold text-slate-200">Apollo <span class="text-yellow-300">Classes</span></p>
+    <p class="mt-1">Best 1:1 coaching for Boards, JEE & NEET</p>
+  </footer>
 
-    <div class="badge"><span class="dot-pulse" aria-hidden="true"></span>⚡ Only a Few Seats Left</div>
-
-    <h2 id="cta-title">
-      Ready to Score Higher in <span>Physics?</span>
-    </h2>
-
-    <p class="sub">
-      Join Zeya Sir's 100-Day Crash Course. Limited slots — don't miss your chance.
-    </p>
-
-    <div class="final-cta-btns">
-      <a href="tel:8290391367" class="btn-gold">📞 Call: 8290391367</a>
-      <a href="tel:8290391367" class="btn-outline">🎯 Book Free Demo Class</a>
-    </div>
-
-    <p class="fine">Free demo &middot; No commitment &middot; Limited slots per batch</p>
-
-  </div>
-</section>
-
-
-<!-- ════════════════════════════════════════
-     FOOTER
-════════════════════════════════════════ -->
-<footer role="contentinfo">
-  <p class="footer-brand">Apollo <span>Classes</span></p>
-  <p class="footer-sub">Led by Zeya Sir &bull; Physics, Chemistry &bull; Boards, JEE, NEET</p>
-  <p class="footer-phone">📞 <a href="tel:8290391367">8290391367</a></p>
-</footer>
-
-
-<!-- ════════════════════════════════════════
-     STICKY BOTTOM CTA
-════════════════════════════════════════ -->
-<div class="sticky-cta" id="sticky-cta" role="complementary" aria-label="Quick contact bar">
-  <a href="tel:8290391367" class="btn-gold">🎯 Book Free Demo</a>
-  <a href="tel:8290391367" class="btn-outline">📞 Call Now</a>
-</div>
-
-
-<!-- Script — loaded at end of body for fastest page paint -->
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
